@@ -13,12 +13,23 @@
 - 工作流引擎
 - 多用户支持（数据隔离）
 
+## 下载
+
+| 平台 | 文件 |
+|------|------|
+| Linux AMD64 | `koi-butler-linux-amd64` |
+| Linux ARM64 | `koi-butler-linux-arm64` |
+| Windows | `koi-butler-windows-amd64.exe` |
+
 ## 运行
 
 ```bash
 # Linux/macOS
-chmod +x koi-butler
-./koi-butler
+chmod +x koi-butler-linux-*
+./koi-butler-linux-amd64  # 或 arm64
+
+# Windows
+koi-butler-windows-amd64.exe
 
 # 默认端口 13456
 # 访问 http://localhost:13456
@@ -35,7 +46,6 @@ chmod +x koi-butler
 
 ## 注意事项
 
-- 当前编译版本为 **Linux ARM64** 架构
 - 前端已嵌入二进制文件，无需额外文件
 - 首次运行会自动创建 `data/` 和 `logs/` 目录
 - 默认管理员账号需要首次访问时注册
