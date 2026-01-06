@@ -38,13 +38,15 @@ chmod +x koi-butler
 ```
 KoiButlerV1/
 ├── koi-butler          # 可执行文件 (Linux ARM64)
-├── frontend_dist/      # 前端静态文件
+├── frontend/
+│   └── dist/           # 前端静态文件 (必须保持此路径)
 └── README.md
 ```
 
 ## 注意事项
 
 - 当前编译版本为 **Linux ARM64** 架构
+- **前端文件必须放在 `frontend/dist/` 目录下**
 - 首次运行会自动创建 `data/` 和 `logs/` 目录
 - 默认管理员账号需要首次访问时注册
 
