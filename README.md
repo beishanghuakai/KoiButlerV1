@@ -33,25 +33,15 @@ chmod +x koi-butler
 | `JWT_SECRET` | (内置) | JWT 签名密钥 |
 | `LOG_LEVEL` | INFO | 日志级别 |
 
-## 目录结构
-
-```
-KoiButlerV1/
-├── koi-butler          # 可执行文件 (Linux ARM64)
-├── frontend/
-│   └── dist/           # 前端静态文件 (必须保持此路径)
-└── README.md
-```
-
 ## 注意事项
 
 - 当前编译版本为 **Linux ARM64** 架构
-- **前端文件必须放在 `frontend/dist/` 目录下**
+- 前端已嵌入二进制文件，无需额外文件
 - 首次运行会自动创建 `data/` 和 `logs/` 目录
 - 默认管理员账号需要首次访问时注册
 
 ## 技术栈
 
 - 后端: Go + Chi Router + SQLite
-- 前端: Vue 3 + TypeScript + Element Plus
+- 前端: Vue 3 + TypeScript + Element Plus (嵌入)
 - 通信: WebSocket + REST API

@@ -1,1 +1,0 @@
-import{a4 as a}from"./index-Bf3lHhEM.js";const e={list:t=>a.get("/goods",{params:t}).then(o=>o.data),listByAccount:(t,o=1)=>a.get(`/goods/account/${t}`,{params:{page:o}}).then(s=>s.data)};export{e as g};
